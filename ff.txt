@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webpage</title>
+	<link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+	<div class="page">
+		<div class="grid1">
+			<div class="body-1">
+				<header>
+					<div>
+						<img src="logo2.jpg">
+					</div>
+					<div id="test">
+						WHAT IS IT?
+					</div>
+					<div>
+						ABOUT
+					</div>
+					<div>
+						PRICE
+					</div>
+					<div class="search">
+						<!-- <img src="filename.jpg" width="32px"> -->
+						<input type="text" class="search-input">
+					</div>
+					<div class="search">
+						<img src="filename1.jpg" width="32px">
+					</div>
+		    	</header>
+	       		<div class="left-body">
+	    			<div class="withu">
+	    				With you wherever <br> you're going
+	    			</div>
+	    			<div>
+	    				One platform with all the ecommerce and point of sale <br>
+	    				features you need to start, run, and grow your business.
+	    			</div>
+	    			<div>
+	    				<input type="email" name="e-mail" placeholder="name@youremail.com">
+	    				<button>Subscribe</button>
+	    			</div>
+	    			<div class="sell">
+	    				<img class="move" src="sell.PNG">
+	    			</div>
+	    			<div class="earn">
+	    				<img class="move" id="earn_1" src="earn.PNG">
+	    				<img src="Connect.PNG">
+	    			</div>
+	    		</div>
+            </div>
+	    	<div class="body-2">
+				<div class="grid2">
+	        		<div>
+	        			<img src="phone.PNG">
+	        		</div>
+	        		<div>
+	        			<img src="object.PNG">
+	        		</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+	margin: 0;
+	padding: 50px;
+	background-color: #f2f2f2;
+	font-family: "Bahnschrift"
+}
+
+.grid1 {
+	display: grid;
+	grid-template-columns: 62% 38%;
+	grid-template-rows: 100%;
+}
+
+.grid2 {
+	display: grid;
+	grid-template-columns: 60% 30%;
+	grid-template-rows: 100%;
+}
+
+.body-1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+    grid-row-start: 1;
+	grid-row-end: 2;
+	padding: 20px;
+	background-color: white;
+}
+
+.body-2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	background-color: #dff9fb;
+	grid-row-start: 1;
+	grid-row-end: 2; 
+}
+
+header {
+	width: 100%;
+
+}
+
+header div {
+	display: inline-block;
+	padding: 20px;
+}
+
+.search img {
+	position: relative;
+    top: 10px;
+}
+
+.left-body {
+	display: inline-block;
+	margin-top: 18px;
+	margin-left:32px;
+}
+
+.left-body div {
+	padding: 15px;
+}
+
+input[type="email"] {
+	border: 0;
+	font-size: 12px;
+	background-color: #dff9fb;
+	height: 36px;
+	width: 250px;
+	border-radius: 9px;
+	padding-left: 15px;
+}
+
+.left-body button {
+	background-color: #650fd6;
+	border: 0;
+	border-radius: 7px;
+	height: 36px;
+	width: 100px;
+	color: white;
+	position: relative;
+}
+
+.withu {
+	font-size: 41px;
+}
+
+.search-input {
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid grey;
+    outline: none;
+    transition: 0.2s width ease;
+    background-image: url("filename.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+.search-input:hover {
+    width: 120px;
+    background-image: inherit;
+
+}
+
+.body-2 div {
+	padding: 0;
+	margin: 0;
+}
+	
+
+
+.sell {
+	margin-left: -25px;
+	margin-top: 9px;
+	transition: 1s;
+}
+
+.earn {
+	position: relative;
+	bottom: 72px;
+}
+
+.earn img {
+	border-radius: 15px;
+	border-top-left-radius: 9px;
+}
+
+#earn_1 {
+	position: relative;
+	bottom: 27px;
+	left: 11px;
+}
+
+.sell:hover {
+	transform: translateY(-100px);
+}
+
+/*@keyframes animate {
+	0% {
+		top: 0;
+		animation-timing-function: ease-in;
+	}
+
+	100% {
+		top: 100px;
+		animation-timing-function: ease-out;
+	}
+}*/
